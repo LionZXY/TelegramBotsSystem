@@ -11,13 +11,13 @@ import org.telegram.telegrambots.bots.TelegramWebhookBot;
 public class YaMobilization extends TelegramWebhookBot {
     @Override
     public BotApiMethod onWebhookUpdateReceived(Update update) {
-        System.out.println(update.getMessage().getText());
+        System.out.println(update.getMessage().toString());
         return null;
     }
 
     @Override
     public String getBotUsername() {
-        return "YaMobilizationBot";
+        return "TestLionZXYBot";
     }
 
     @Override

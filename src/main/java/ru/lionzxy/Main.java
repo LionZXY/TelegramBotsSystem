@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            TelegramBotsApi telegramBotsApi = new TelegramBotsApi("cert.pem", "159357za", "https://telegram.lionzxy.ru:8443", "https://telegram.lionzxy.ru:8443");
+            TelegramBotsApi telegramBotsApi = new TelegramBotsApi("server.jks", BotConfig.KEY_PASSWORD , "https://telegram.lionzxy.ru:443/", "https://telegram.lionzxy.ru:443/","YOURPEM.pem","YOURPEM.pem");
             telegramBotsApi.registerBot(new YaMobilization());
         } catch (Exception e) {
             new CrashFileHelper(e);
